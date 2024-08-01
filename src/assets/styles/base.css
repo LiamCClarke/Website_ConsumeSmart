@@ -1,0 +1,71 @@
+:root {
+  /* Colour */
+  --primary-color: #1B1B1F; /* Gunmetal (Background) */
+  --secondary-color: #202127; /* Onyx (Second-Background) */
+  --accent-color: rgb(108, 174, 117); /* #6CAE75 Asparagus */
+  --accent-color-hover: rgba(108, 174, 117, 0.8);
+  --text-color: rgb(238, 238, 238); /* #EEEEEE Anti-Flash White */
+  --text-color-hover: rgba(238, 238, 238, 0.8);
+  /* Font related variables */
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+
+  --nav-height: 64px;
+  --logo-height: 40px;
+
+  --layout-width: 1080px;
+  --hero_height: 400px;
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 50px;
+}
+
+.nav-links li a {
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+
+.nav-links li a:hover {
+  color: var(--text-color-hover)
+}
+
+button, .button {
+  padding: 9px 25px;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+
+button:hover {
+  background-color: var(--accent-color-hover);
+}
+
+.hero_content {
+  width: 100%;
+}
