@@ -34,12 +34,12 @@ const hero_content = {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 90px;
+    padding: 90px 0 90px;
 }
 
 .hero_main, .hero_media {
-    max-width: calc(var(--layout-width)/2);
-    width: calc(var(--layout-width)/2);
+    max-width: 50%;
+    width: 50%;
     max-height: var(--hero_height);
 }
 
