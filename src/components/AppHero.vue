@@ -1,20 +1,23 @@
 <script setup>
-import { ref } from 'vue' // ref is needed to declare reactive states
 
-const hero_content = {
-    name: '',
-    text: '',
-    tagline: ''
-}
+const props = defineProps({
+    name: String,
+    text: String,
+    tagline: String,
+    reversed: {
+        type: Boolean,
+        default: false
+    }
+})
 </script>
 
 <template>
-    <div class="hero_content">
+    <div class="hero_content" :class="{ 'hero-reversed' : reversed}">
         <!-- <div class="hero_container"> -->
             <div class="hero_main">
-                <h1 class="name">Consume Smart</h1>
-                <p class="text">Make Choices Quicker, Cheaper, Smarter.</p>
-                <p class="tagline">Consume Smart compares essential products helping you make the smarter purchase.</p>
+                <h1 class="name">{{props.name}}</h1>
+                <p class="text">{{props.text}}</p>
+                <p class="tagline">{{props.tagline}}</p>
                 <div class="actions">
                     <div class="action">
                         <a class="button">Get Started</a>
@@ -22,7 +25,6 @@ const hero_content = {
                 </div>
             </div>
             <div class="hero_media">
-                <img class="hero_image bg" src="../assets/media/hero_bulb_glow.png">
                 <img class="hero_image" src="../assets/media/hero_bulb.png" alt="bulb with brain and graduate cap">
             </div>
         <!-- </div> -->
@@ -41,18 +43,24 @@ const hero_content = {
     max-width: 50%;
     width: 50%;
     max-height: var(--hero_height);
+    order: 1;
 }
 
 .hero_media {
     display: flex;
     align-items: center;
     justify-content: center;
+    order: 2;
 }
 
 .hero_image {
     position: absolute;
     background-color: transparent;
     height: var(--hero_height);
+}
+
+.hero-reversed {
+    flex-direction: row-reverse;
 }
 
 .bg {
