@@ -13,21 +13,19 @@ const props = defineProps({
 
 <template>
     <div class="hero_content" :class="{ 'hero-reversed' : reversed}">
-        <!-- <div class="hero_container"> -->
-            <div class="hero_main">
-                <h1 class="name">{{props.name}}</h1>
-                <p class="text">{{props.text}}</p>
-                <p class="tagline">{{props.tagline}}</p>
-                <div class="actions">
-                    <div class="action">
-                        <a class="button">Get Started</a>
-                    </div>
+        <div class="hero_main">
+            <h1 class="name">{{props.name}}</h1>
+            <p class="text">{{props.text}}</p>
+            <p class="tagline">{{props.tagline}}</p>
+            <div class="actions">
+                <div class="action">
+                    <a class="button">Get Started</a>
                 </div>
             </div>
-            <div class="hero_media">
-                <img class="hero_image" src="../assets/media/hero_bulb.png" alt="bulb with brain and graduate cap">
-            </div>
-        <!-- </div> -->
+        </div>
+        <div class="hero_media">
+            <img class="hero_image" src="../assets/media/hero_bulb.png" alt="bulb with brain and graduate cap">
+        </div>
     </div>
 </template>
 
