@@ -1,13 +1,12 @@
 <script setup>
-import Header from './components/Header.vue'
-import Main from './components/Main.vue'
-import Footer from './components/Footer.vue'
+import AppHeader from './components/AppHeader.vue'
+import AppMain from './components/AppMain.vue'
 </script>
 
 <template>
   <div class="layout">
-    <Header />
-    <Main />
+    <AppHeader />
+    <AppMain />
     <!--<Footer />-->
   </div>
 </template>
