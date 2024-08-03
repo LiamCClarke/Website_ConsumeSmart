@@ -10,10 +10,10 @@
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 
-  --nav-height: 64px;
+  --nav-height: 4rem; /* 64px */
   --logo-height: 40px;
 
-  --layout-width: 1080px;
+  --layout-width: 80rem; /* 1280px */
   --hero_height: 400px;
 }
 @supports (font-variation-settings: normal) {
