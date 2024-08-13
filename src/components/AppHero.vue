@@ -24,7 +24,7 @@ const props = defineProps({
             </div>
         </div>
         <div class="hero_media">
-            <img class="hero_image" src="../assets/media/hero_bulb.png" alt="bulb with brain and graduate cap">
+            <img class="hero_image" src="../assets/media/hero_shopping.svg" alt="bulb with brain and graduate cap">
         </div>
     </div>
 </template>
@@ -34,7 +34,7 @@ const props = defineProps({
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 90px 0 90px;
+    padding: 150px 0 150px;
 }
 
 .hero_main, .hero_media {

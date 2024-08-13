@@ -1,8 +1,12 @@
+<script>
+import { createRouter } from 'vue-router'
+</script>
+
 <template>
     <header>
         <div class="nav-container">
             <div class="nav-content">
-                <img class="nav-logo" src="../assets/media/logo1.png" alt="logo">
+                <h1 class="title">BIO.</h1>
                 <nav>
                     <ul class="nav-links">
                         <li><a href="#">Link 1</a></li>
@@ -33,15 +37,9 @@
 }
 
 .title {
-    flex-shrink: 0;
-    height: var(--nav-height);
-}
-
-.nav-bar-title {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: var(--nav-height);
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-size: 30px;
 }
 
 .nav-logo {

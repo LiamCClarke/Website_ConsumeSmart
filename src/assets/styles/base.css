@@ -2,8 +2,10 @@
   /* Colour */
   --primary-color: #1B1B1F; /* Gunmetal (Background) */
   --secondary-color: #202127; /* Onyx (Second-Background) */
-  --accent-color: rgb(108, 174, 117); /* #6CAE75 Asparagus */
-  --accent-color-hover: rgba(108, 174, 117, 0.8);
+  /*--accent-color: rgb(108, 174, 117); /* #6CAE75 Asparagus */
+  --accent-color: rgb(204, 85, 0); /* #CC5500 Burnt Orange */
+  /*--accent-color-hover: rgba(108, 174, 117, 0.8);*/
+  --accent-color-hover: rgba(204, 85, 0, 0.8);
   --text-color: rgb(238, 238, 238); /* #EEEEEE Anti-Flash White */
   --text-color-hover: rgba(238, 238, 238, 0.8);
   /* Font related variables */
