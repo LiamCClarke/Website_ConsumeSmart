@@ -3,9 +3,9 @@ import AppHero from './AppHero.vue'
 import AppFeatures from './AppFeatures.vue'
 
 const heroTop = {
-    name: 'Consume Smart',
-    text: 'Make Choices Quicker, Cheaper, Smarter.',
-    tagline: 'Consume Smart compares essential products helping you make the smarter purchase.',
+    name: 'Buy It Once.',
+    text: 'Make Smarter, Quicker, and More Affordable Choices.',
+    tagline: 'Buy It Once helps you compare and find the most durable and cost-effective products, using community-driven insights to ensure every purchase is a smart one.',
     reversed: false
 }
 
@@ -24,7 +24,6 @@ const heroLower = {
         </div>
         <div class="main-content">
             <AppHero :="heroTop"/>
-            <AppHero :="heroLower"/>
             <AppFeatures />
         </div>
         <div class="main-side-panel">
