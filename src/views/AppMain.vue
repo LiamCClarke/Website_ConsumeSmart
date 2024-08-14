@@ -1,6 +1,6 @@
 <script setup>
-import AppHero from './AppHero.vue'
-import AppFeatures from './AppFeatures.vue'
+import AppHero from '../components/AppHero.vue'
+import AppFeatures from '../components/AppFeatures.vue'
 
 const heroTop = {
     name: 'Buy It Once.',

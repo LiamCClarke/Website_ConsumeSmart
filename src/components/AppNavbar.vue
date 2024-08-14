@@ -1,17 +1,13 @@
-<script>
-import { createRouter } from 'vue-router'
-</script>
-
 <template>
     <header>
         <div class="nav-container">
             <div class="nav-content">
-                <h1 class="title">BIO.</h1>
+                <router-link :to="{ name: 'Home' }"><h1 class="title">BIO.</h1></router-link>
                 <nav>
                     <ul class="nav-links">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
+                        <li><router-link to="/test1">Test1</router-link></li>
+                        <li><router-link to="/test2">Test2</router-link></li>
+                        <li><router-link to="/test3">Test3</router-link></li>
                     </ul>
                 </nav>
                 <a class="cta" href="#"><button>Learn More</button></a>
@@ -40,20 +36,14 @@ import { createRouter } from 'vue-router'
     font-weight: 900;
     letter-spacing: 3px;
     font-size: 30px;
+    cursor: pointer;
 }
 
-.nav-logo {
-    height: var(--logo-height);
+.nav-links a {
+    font-weight: 600;
 }
 
-.content {
-    flex-grow: 1;
-}
-
-.content-body {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: var(--nav-height);
+.nav-links a.router-link-exact-active {
+    color: var(--accent-color);
 }
 </style>
