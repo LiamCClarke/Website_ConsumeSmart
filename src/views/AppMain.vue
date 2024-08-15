@@ -8,13 +8,6 @@ const heroTop = {
     tagline: 'Buy It Once helps you compare and find the most durable and cost-effective products, using community-driven insights to ensure every purchase is a smart one.',
     reversed: false
 }
-
-const heroLower = {
-    name: 'Test Name',
-    text: 'Test Text',
-    tagline: 'Test Tagline',
-    reversed: true
-}
 </script>
 
 <template>

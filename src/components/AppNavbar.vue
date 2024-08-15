@@ -5,7 +5,7 @@
                 <router-link :to="{ name: 'Home' }"><h1 class="title">BIO.</h1></router-link>
                 <nav>
                     <ul class="nav-links">
-                        <li><router-link to="/test1">Test1</router-link></li>
+                        <li><router-link :to="{ name: 'Categories' }">Categories</router-link></li>
                         <li><router-link to="/test2">Test2</router-link></li>
                         <li><router-link to="/test3">Test3</router-link></li>
                     </ul>
