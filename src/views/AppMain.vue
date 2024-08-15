@@ -16,7 +16,7 @@ const heroTop = {
 
         </div>
         <div class="main-content">
-            <AppHero :="heroTop"/>
+            <AppHero v-bind="heroTop"/>
             <AppFeatures />
         </div>
         <div class="main-side-panel">
